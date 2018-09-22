@@ -1,53 +1,78 @@
 body {
-    background-color: aqua;
+   /* background-image: url("/assets/images/topography.png");
+   */
+   background-color: gray; 
+   padding: 0px;
     margin: 0px;
-    padding: 0px;
+    text-decoration: none;
+    
+}
+
+header,
+#navButtons,
+#leftHeader {
+    width: 20%;
+    height: 100px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
 }
 
 #leftHeader {
-    background-color: purple;
-    width: 20%;
+    background-color: #fff;
     height: 100px;
+    float: left;
+    width: 160px
 }
 
+
 header {
-    background-color: red;
+    width: 280px;
+    margin: 0px;
+    text-align: center;
+    background-color: #4aaaa5;
+    float: left;
+    color: #fff;
 }
 
 #navButtons {
-    width: 60%;
-    height: 100px;
-    background-color: grey;
-    margin: 20px;
-    padding-left: 50px;
-    padding-right: auto;
-    padding-top: auto;
-    padding-bottom: auto;
-
+    background-color: #fff;
+    float: left;
+    width: 820px;
+    text-align: right;
 }
 
-header {
-    margin: 0px;
-    text-align: center;
-    width: 40%;
-}
 
-#navButtons,
 #About,
 #Portfolio,
-#Contact,
-#picOfMe {
-
-    float: left;
+#Contact {
+    float:left;
 }
 
 #mainContent {
-    background-color: gray;
-    width: 60%;
-    margin: 0 auto;
+    clear: both;
+    background-color: #fff;
+    width: 960px;
+    height: 500px;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-bottom: 20px;
+    padding: 20px;
+   
+}
+
+#aboutMe {
+    color: #4aaaa5;
 }
 
 #picOfMe {
     margin-right: 20px;
+    padding-left; 20px;
+    float: left;
+  
 
+}
+
+p {
+   line-height: 1.5em;
 }
