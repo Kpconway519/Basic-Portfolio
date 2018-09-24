@@ -1,17 +1,127 @@
+/*Colors Pro-tip: Use the Eye Dropper Chrome extension to find the colors used on web pages.
+
+
+Teal color (used for headings and backgrounds): #4aaaa5
+
+Regular font color (used for paragraphs and all text besides the headings): #777777
+
+Main header background color: #ffffff
+
+Main header border color: #cccccc
+
+Footer background color: #666666
+
+Main content background color: #ffffff
+
+Main content border color: #dddddd
+
+
+
+
+Fonts:
+
+
+For heading fonts use font-family: 'Georgia', Times, Times New Roman, serif;.
+For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;.*/
+
+/*Bonus
+
+
+Make your pages more sophisticated by adding style to text links, to image links, and to buttons for when a user hovers their cursor over them. A CSS hover tutorial can be found here.
+You can use Adobe Kuler to find colors that match the theme (in this case, the primary color is Teal #4aaaa5).
+
+Make a "sticky footer." You will notice the dark grey footer will always rest just below the content. This is fine whenever your site has enough content to push it down past the height of most monitors. But if there isn't much content in the body, the footer could rest in the middle of the page:
+
+
+Try to code the footer in a way that it will always remain at the bottom of the page, no matter how short the content is. A sticky footer tutorial can be found here.
+Give the Footer the following CSS:
+border-top: 8px solid #4aaaa5;*/
+
+
+
+/*To Do: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Portfolio
+
+    Good bet for the next page I will attempt. May need to use absolute and relative positioning like we learned on Saturday, but looks easier than just starting from scratch on something. 
+
+1. Make 5 boxes.
+    possible code:
+
+<div class="contentBox">
+    <a href="#">
+        <img src="sampleImage.png" alt="picture">
+        <div class="contentBoxTextInlay">
+        <p>Work Text</p>
+        </div>
+    </a>
+</div>
+
+.contentBox {
+    float: left;
+}
+
+.contentBoxTextInlay {
+    position: relative;
+
+
+}
+
+2. How about a #portfolioBox id in css, and a #contactBox, just copy and paste most of the stuff from before. Trying now. for portfolio, I'm gonna make height 900 instead of 500.
+
+
+
+
+∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆
+FINISHED WORK
+
+DONE        STEPS BEFORE I START WORK ON THE OTHER PAGES
+
+DONE        1. link background image
+
+DONE        3. Make the buttons in the nav bar link to the other pages.
+
+DONE       2. Very Important: make sure my design for this first page can apply to the other pages. 
+
+DONE        2. make nav buttons work. Something seems to be interfering with any styling I try to apply to my nav           buttons, not sure why. Have tried several things, but cannot make them work. Including stylistic things             like decoration. I was able to remove the bullet points though. DONE
+
+DONE        4. write bio
+
+∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑∑
+
+Other Pages:
+
+Contact
+
+    This page is a form, so I need to figure out how to make a form. Otherwise, styling is pretty much the same, might want to do this one LAST and go to portfolio.
+
+
+General Note: 
+    I know I am just starting out, but I want to keep a continual focus on scalability. If my stylesheet is going to apply for the whole website, I need to make sure I don't make it too specific to the first page. 
+
+
+
+*/
 body {
-   /* background-image: url("/assets/images/topography.png");
-   */
-   background-color: gray; 
+    background-image: url("../images/otis_redding_@2X.png");
+   
+   /*background-color: gray; */
    padding: 0px;
     margin: 0px;
     text-decoration: none;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     
 }
 
+a {
+
+    text-decoration: none;
+    color: #777;
+}
 header,
 #navButtons,
 #leftHeader {
-    width: 20%;
+    font-family: 'Georgia', Times, serif;
     height: 100px;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -38,8 +148,18 @@ header {
 #navButtons {
     background-color: #fff;
     float: left;
+    position: relative;
     width: 820px;
-    text-align: right;
+}
+
+
+#navLinks {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    padding-left: 400px;
+    padding-top: 20px;
+    text-decoration: none;
+    
 }
 
 
@@ -47,6 +167,7 @@ header {
 #Portfolio,
 #Contact {
     float:left;
+    margin-right: 30px;
 }
 
 #mainContent {
@@ -58,16 +179,48 @@ header {
     margin-right: 160px;
     margin-bottom: 20px;
     padding: 20px;
+    padding-left: 5px;
+    border: 1px solid #ddd;
    
 }
 
-#aboutMe {
+#portfolioBox {
+
+    clear: both;
+    background-color: #fff;
+    width: 960px;
+    height: 900px;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-left: 5px;
+    border: 1px solid #ddd;
+}
+
+
+.contentBox {
+    float: left;
+    margin: 10px;
+}
+
+#mainContentHeading {
     color: #4aaaa5;
+    margin-left: 28px;
+    font-size: 30px;
+}
+
+#greyBorder {
+    height: 3px;
+    width: 903px;
+    background-color: #ddd;
+    margin-bottom: 30px;
+    margin-left: 32px;
 }
 
 #picOfMe {
     margin-right: 20px;
-    padding-left; 20px;
+    padding-left: 10px;
     float: left;
   
 
@@ -75,4 +228,20 @@ header {
 
 p {
    line-height: 1.5em;
+}
+
+#mintBorder {
+    width: 100%;
+    height: 5px;
+    background-color: #4aaaa5;
+}
+
+footer {
+
+    height: 20px;
+    background-color: #666;
+    text-align: center;
+    padding-top: 80px;
+    color: #fff;
+
 }
