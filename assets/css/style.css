@@ -189,7 +189,7 @@ header {
     clear: both;
     background-color: #fff;
     width: 960px;
-    height: 900px;
+    height: 1200px;
     margin-left: 160px;
     margin-right: 160px;
     margin-bottom: 20px;
@@ -198,16 +198,45 @@ header {
     border: 1px solid #ddd;
 }
 
+#formElements {
+    margin-left: 10px;
+    color: #777;
+    margin-left: 30px;
+}
+
+#formItem {
+    margin-bottom: 10px;
+}
+
+button {
+    border-radius: 0px;
+    background-color: #4aaaa5;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px 30px 10px 30px;
+}
 
 .contentBox {
     float: left;
     margin: 10px;
 }
 
+.pictureText {
+    position: relative;
+    bottom: 80px;
+    background-color: #4aaaa5;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 #mainContentHeading {
     color: #4aaaa5;
     margin-left: 28px;
-    font-size: 30px;
+    font-size: 35px;
+    font-family:  'Georgia', Times, serif;
 }
 
 #greyBorder {
@@ -222,7 +251,6 @@ header {
     margin-right: 20px;
     padding-left: 10px;
     float: left;
-  
 
 }
 
